@@ -470,7 +470,7 @@
   flex-direction: column;
 }
 .about__mission img {
-  width: 50px;
+  height: 50px;
   align-self: center;
   padding: 10px;
 }
@@ -488,13 +488,6 @@
 }
 .about__history .about__history-img-1 {
   height: 50px;
-  order: 2;
-  padding: 10px;
-}
-.about__history .about__history-img-2 {
-  width: 100px;
-  order: 1;
-  padding-right: 20px;
   padding: 10px;
 }
 
@@ -509,21 +502,21 @@
 }
 
 .about__activities-img-1 {
-  width: 50px;
+  height: 50px;
   order: 1;
   padding: 10px;
   padding-right: 40px;
 }
 
 .about__activities-img-2 {
-  width: 50px;
+  height: 50px;
   order: 2;
   padding: 10px;
   padding-right: 40px;
 }
 
 .about__activities-img-3 {
-  width: 50px;
+  height: 50px;
   order: 3;
   padding: 10px;
 }

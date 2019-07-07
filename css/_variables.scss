@@ -1,0 +1,15 @@
+//breakpoints
+$break-sml: 767.98px; //max
+$break-med: 768px; //min
+$break-lrg: 992px; //min
+
+//fonts
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono|Roboto:100,400&display=swap');
+$font-stack: "Roboto", Arial, Helvetica, sans-serif;
+$font-mono: "Roboto Mono", Consolas, Monaco, Courier, monospace;
+
+//animation
+@keyframes fade-in {
+  from {opacity: 0;}
+  to {opacity: 1}
+}

@@ -1,0 +1,113 @@
+@import "variables";
+
+.about {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+
+  h2 {
+    font-size: 1.3em;
+    font-weight: 800;
+    margin-bottom: 0;
+  }
+  img {
+    margin: 3px;
+  }
+}
+
+.about-img {
+  background-image: url("../images/about/sydney.jpeg");
+  background-size: cover;
+  height: 40vh;
+  border-bottom: 1px solid #000;
+}
+
+.about__mission {
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+  
+  img {
+    width: 50px;
+    align-self: center;
+    padding: 10px;
+  }
+}
+
+.about__history {
+  display: flex;
+  flex-direction: column;
+
+  p abbr {
+    text-decoration: none;
+  }
+
+  .about__history-img-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .about__history-img-1 {
+    width: 150px;
+    order: 2;
+    padding: 10px;
+  }
+  .about__history-img-2 {
+    width: 100px;
+    order: 1;
+    padding-right: 20px;
+    padding: 10px;
+  }
+}
+
+.about__activites {
+  display: flex;
+  flex-direction: column;
+}
+
+.about__activities-img-container {
+  display: flex;
+  justify-content: center;
+}
+
+.about__activities-img-1 {
+    width: 50px;
+    order: 1;
+    padding: 10px;
+    padding-right: 40px;
+}
+
+  .about__activities-img-2 {
+    width: 50px;
+    order: 2;
+    padding: 10px;
+    padding-right: 40px;
+}
+
+  .about__activities-img-3 {
+    width: 50px;
+    order: 3;
+    padding: 10px;
+}
+
+.partners--about {
+  border-top: 1px solid #000;
+  margin-top: 50px;
+}
+
+@media (max-width: $break-sml) {
+  .about {
+    width: 90%;
+  }
+}
+
+@media (min-width: $break-med) {
+  .about {
+    width: 80%;
+    padding-top: 30px;
+  }
+}
+
+@media (min-width: $break-lrg) {
+
+}

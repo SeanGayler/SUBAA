@@ -1,0 +1,56 @@
+@import "variables";
+
+#major-link {
+  color: #007BFF;
+  font-weight: 800;
+}
+
+#major-link:hover {
+  text-decoration: underline;
+}
+
+.major-img {
+  background-image: url("../images/major.jpeg");
+  background-size: cover;
+  height: 40vh;
+  border-bottom: 1px solid #000;
+}
+
+.major {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+
+  h2 {
+    font-size: 1.3em;
+    font-weight: 800;
+    margin-bottom: 0;
+  }
+}
+
+.major__description {
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.partners--major {
+  border-top: 1px solid #000;
+}
+
+@media (max-width: $break-sml) {
+  .major {
+    width: 90%;
+  }
+}
+
+@media (min-width: $break-med) {
+  .major {
+    width: 80%;
+    padding-top: 30px;
+  }
+}
+
+@media (min-width: $break-lrg) {
+
+}

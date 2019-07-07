@@ -1,0 +1,137 @@
+@import "variables", "navbar", "index", "about", "major";
+
+body {
+  margin: 0;
+  font-family: $font-stack;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+a:visited {
+  color: #000;
+}
+
+.social-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  background-color: rgba(0,0,0,0.9); /*dim the background*/
+}
+
+.social-overlay-box {
+  position: absolute;
+  /*CSS TRICK to position center, take width as 250px, margin-left as -width/2 and left:50%*/
+  left: 50%;
+  /*----*/
+  top: 40vh;
+  height: 125px;
+  z-index: 15;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 5px solid #BCB5B5;
+}
+
+.social-overlay__close {
+  position: absolute;
+  background-color: #fff;
+  font-weight: 800;
+  font-size: 1.3em;
+  width: 25px;
+  height: 30px;
+  padding: 2px;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;;
+}
+
+.social-overlay-box {
+  h3 {
+    margin-top: 0;
+  }
+}
+
+.partners {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.partners__title {
+  margin-top: 30px;
+  font-size: 1.3em;
+}
+
+.partners {
+  div {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+}
+
+.partners__img {
+  height: 100px;
+  margin: 15px;
+}
+
+.footer {
+  height: 15vh;
+  margin-top: 35px;
+  padding: 10px;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  p {
+    margin: 0;
+    padding-top: 20px;
+  }
+}
+
+.footer__email {
+  color: #fff;
+}
+
+@media (max-width: $break-sml) {
+  .social-overlay-box {
+    width: 250px;
+    margin-left: -125px;
+  }
+}
+
+@media (min-width: $break-med) {
+  .social-overlay-box {
+    width: 500px;
+    margin-left: -250px;
+  }
+}
+
+@media (min-width: $break-lrg) {
+  .social-overlay-box {
+    width: 700px;
+    margin-left: -350px;
+  }
+}

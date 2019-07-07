@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>SUBAA</title>
+  <link href="css/main.css" rel="stylesheet" href="style.css">
+  <script src="javascript/main.js"></script>
+</head>
+<body>
+  <!--overlay and overlay box for social media button on mobile-->
+  <div id="social-overlay-box" class="display-none">
+    <button class="social-overlay__close"><span>X</span></button>
+    <h3>Social media</h3>
+    <div>
+      <a href="https://www.facebook.com/pg/sydneunibaa/" target="_blank"><img class="header__social-link" src="images/logo-fb.png"></a>
+      <a href="https://www.instagram.com/usydbusinessanalytics/" target="_blank"><img class="header__social-link" src="images/logo-insta.png"></a>
+    </div>
+  </div>
+  <div id="social-overlay" class="display-none">
+  </div>
+
+  <!--header and nav-->
+  <header class="header">
+    <div class="header__div header__div-img">
+      <img class="header__img-connect" src="images/icon-connect.png" alt="social media links">
+      <a href="https://www.facebook.com/pg/sydneunibaa/" target="_blank"><img class="header__social-link header__social-link--display-none" src="images/logo-fb.png"></a>
+      <a href="https://www.instagram.com/usydbusinessanalytics/" target="_blank"><img class="header__social-link header__social-link--display-none" src="images/logo-insta.png"></a>
+    </div>
+    <div class="header__div header__div--title">
+      <a href="index.html"><h1 class="header__title">SUBAA</h1></a>
+    </div>
+    <div class="header__div header__div--align-right header__div-nav-lrg">
+      <button id="hamburger-shift" class="hamburger hamburger--squeeze header__hamburger" type="button">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+      <nav class="nav-inline">
+        <ul class="nav__ul">
+          <a href="about.html"><li class="nav__li--inline">About</li></a>
+          <a href="events.html"><li class="nav__li--inline">Events</li></a>
+          <a href="major.html"><li class="nav__li--inline">Major</li></a>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <nav class="nav-dropdown display-none">
+    <ul class="nav__ul">
+      <a href=about.html""><li class="nav__li--dropdown nav__li--whitebottom">About</li></a>
+      <a href="events.html"><li class="nav__li--dropdown nav__li--whitebottom">Events</li></a>
+      <a href="major.html"><li class="nav__li--dropdown nav__li--blackbottom">Major</li></a>
+    </ul>
+  </nav>
+
+  <!--beautiful main image-->
+  <div class="major-img">
+  </div>
+
+  <!--infomration about SUBAA-->
+  <div class="major">
+    <div class="major__description">
+      <h2>Business Analytics Major</h2>
+      <p>Business Analytics is a subject area provided by Sydney Universities Business School, which can be undertaken 
+        as a major or minor within the faculty. Business Analytics teaches students quantitative methods to utilize
+        in the various industries that use business analytics and business data for company operations. The subject 
+        area provides students with skills to understanding, extract and summarise rich data sets and operational models 
+        to create data-driven solutions, decisions and insights. The Business Analytics subject also enhances and compliments 
+        a range of electives such as business statistics, engineering, operations management and decisions sciences. </p>
+      <p>More information can be found in the
+        <a id="major-link" href="https://sydney.edu.au/handbooks/business_school/subject_areas/business_analytics.shtml" target="_blank">
+        USYD Business School Handbook.</a></p>
+      </p>
+    </div>
+  </div>
+
+  <!--company partners-->
+  <section class="partners partners--major">
+    <h2 class="partners__title">Our valued partners</h2>
+    <div>
+      <img class="partners__img" src="images/partners/partner-analytics8.png" alt="analytics 8 logo image">
+      <img class="partners__img" src="images/partners/partner-altis.jpg" alt="altis consulting logo image">
+    </div>
+  </section>
+
+  <!--footer-->
+  <footer class="footer">
+    <div>
+      <a class="footer__email" href="mailto:exec.subaa@gmail.com">exec.subaa@gmail.com</a>
+      <p>&copy; Copyright 2019 SUBAA</p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,145 @@
+@import "variables";
+@import "../node_modules/hamburgers/_sass/hamburgers/hamburgers.scss";
+
+.header {
+  height: 50px;
+  border-bottom: 1px solid black;
+  display: inline-flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+.header__title {
+  position: relative;
+  display: inline;
+  font-family: $font-mono;
+  font-size: 1.3em;
+  animation-name: fade-in;
+  animation-duration: 5.5s;
+}
+
+.header__social-link {
+    height: 25px;
+    height: 25px;
+    margin-right: 5px;
+}
+
+.header__div--title {
+  display: inline-flex;
+  justify-content: center;
+}
+
+.header__title:hover {
+  opacity: 0.7;
+}
+
+#hamburger-shift {
+  padding-top: 12px;
+  padding-bottom: 8px;
+}
+
+.header__div--align-right {
+  display: inline-flex;
+  justify-content: flex-end;
+}
+
+//dropdown navbar
+.nav-dropdown {
+  background-color: #000;
+}
+.nav__li--dropdown {
+  color: #fff;
+  width: 100%;
+  padding: 10px 15px;
+}
+.nav__li--whitebottom {
+  border-bottom: 1px solid #fff;
+}
+.nav__li--blackbottom {
+  border-bottom: 1px solid #000;
+}
+.display-none {
+  display: none;
+}
+
+.nav__li--dropdown:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.nav-inline {
+  display: none;
+}
+
+.nav__ul {
+  padding: 0;
+  list-style: none;
+  margin: 0;
+}
+
+.nav__li--inline {
+  display: inline;
+  padding-left: 14px;
+  text-decoration: underline;
+}
+
+.nav__li--inline:hover {
+  opacity: 0.7;
+}
+
+@media (max-width: $break-sml) {
+  .header__div {
+    min-width: 60px;
+  }
+  .header__img-connect {
+    height: 30px;
+    padding-left: 11px;
+  }
+  .header__img-connect:hover {
+    opacity: 0.7;
+  }
+  .header__div-img {
+    height: 30px;
+  }
+  .header__social-link--display-none {
+    display: none;
+  }
+}
+
+@media (min-width: $break-med) {
+  .header__div {
+    min-width: 80px;
+  }
+  .header__img-connect {
+    display: none;
+  }
+  .header__social-link {
+    display: inline;
+  }
+  .header__social-link:hover {
+    opacity: 0.7;
+  }
+  .header__div-img {
+    height: 25px;
+    padding-left: 14px;
+  }
+}
+
+@media (min-width: $break-lrg) {
+  .header__div {
+    min-width: 190px;
+  }
+  #hamburger-shift {
+    display: none;
+  }
+  .nav-inline {
+    display: inline;
+  }
+  .header__div-nav-lrg {
+    padding-right: 14px;
+  }
+  .nav-dropdown {
+    display: none;
+  }
+}

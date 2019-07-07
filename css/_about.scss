@@ -53,33 +53,26 @@
   }
 }
 
-.about__activites {
-  display: flex;
-  flex-direction: column;
-}
-
 .about__activities-img-container {
   display: flex;
+  flex-direction: row;
   justify-content: center;
 }
 
 .about__activities-img-1 {
     height: 50px;
-    order: 1;
     padding: 10px;
     padding-right: 40px;
 }
 
   .about__activities-img-2 {
     height: 50px;
-    order: 2;
     padding: 10px;
     padding-right: 40px;
 }
 
   .about__activities-img-3 {
     height: 50px;
-    order: 3;
     padding: 10px;
 }
 

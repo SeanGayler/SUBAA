@@ -14,23 +14,14 @@ window.addEventListener('DOMContentLoaded', (event) => {
   const socialOverlay = document.getElementById('social-overlay');
   const socialOverlayBox = document.getElementById('social-overlay-box');
   socialOpenButton.addEventListener('click', () => {
-    socialOverlay.classList.toggle('display-none');
-    socialOverlay.classList.toggle('social-overlay');
-    socialOverlayBox.classList.toggle('display-none');
-    socialOverlayBox.classList.toggle('social-overlay-box');
+    switchOverlay();
   });
   socialOverlay.addEventListener('click', () => {
-    socialOverlay.classList.toggle('display-none');
-    socialOverlay.classList.toggle('social-overlay');
-    socialOverlayBox.classList.toggle('display-none');
-    socialOverlayBox.classList.toggle('social-overlay-box');
+    switchOverlay();
   });
   socialCloseButton.addEventListener('click', () => {
-    socialOverlay.classList.toggle('display-none');
-    socialOverlay.classList.toggle('social-overlay');
-    socialOverlayBox.classList.toggle('display-none');
-    socialOverlayBox.classList.toggle('social-overlay-box');
-  }); //could make a function for these 4 repeating statements, but overall code is not too long.
+    switchOverlay();
+  }); 
   
 
   //image sliding gallery
@@ -65,5 +56,12 @@ window.addEventListener('DOMContentLoaded', (event) => {
     gallery.classList.toggle(slideClasses[i]);
   });
 
+  //does the necessary styling to switch the overlay mode
+  function switchOverlay () {
+    socialOverlay.classList.toggle('display-none');
+    socialOverlay.classList.toggle('social-overlay');
+    socialOverlayBox.classList.toggle('display-none');
+    socialOverlayBox.classList.toggle('social-overlay-box');
+  }
 });
 

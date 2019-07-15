@@ -316,63 +316,43 @@
   color: #0258e3;
 }
 
-.recent-events {
-  display: flex;
-  flex-direction: column;
-  padding: 27px 27px 7px 27px;
-  border-bottom: 1px solid #000;
-}
-
-.recent-events__title {
-  font-size: 1.3em;
-  margin: 0;
-  padding-bottom: 15px;
-  border-bottom: 1px solid #BCB5B5;
-}
-
-.recent-events__card {
+.div-fb-page {
   width: 100%;
-  display: grid;
-  max-height: 100px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  border-bottom: 1px solid #BCB5B5;
-}
-
-.recent-events__card:hover {
-  background-color: #e8e8e8;
-}
-
-.recent-events__card-content {
-  display: inline-block;
-  overflow: hidden;
-  height: 92px;
-}
-
-.recent-events__card-title {
-  font-weight: 800;
-  text-decoration: underline;
-}
-
-.recent-events__card-date {
-  display: inline-flex;
-  color: red;
-  justify-content: flex-end;
-}
-
-.recent-events__link-container {
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 60px;
+  margin-top: 8px;
+  margin-bottom: 20px;
 }
 
-.recent-events__link {
+.div-fb-page-header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.div-fb-page-header__title {
+  margin-top: 27px;
+  margin-bottom: 10px;
+  font-size: 1.3em;
+}
+
+.plugin-container {
+  width: 500px;
+}
+
+.div-fb-page-links {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 27px;
+}
+
+.div-fb-page-links__link {
   color: #007BFF;
   font-size: 1em;
 }
 
-.recent-events__link:hover {
+.div-fb-page-links__link:hover {
   text-decoration: underline;
   color: #0258e3;
 }
@@ -380,6 +360,7 @@
 .gallery {
   background-size: cover;
   height: 55vh;
+  border-top: 1px solid #000;
   border-bottom: 1px solid #000;
   display: flex;
   align-items: center;
@@ -412,27 +393,9 @@
   font-size: 2em;
 }
 
-@media (max-width: 767.98px) {
-  .recent-events__card {
-    grid: auto-flow dense/5fr 3fr;
-  }
-
-  .recent-events__card-date {
-    justify-content: flex-end;
-  }
-}
 @media (min-width: 768px) {
-  .recent-events__card {
-    grid: auto-flow dense/8fr 3fr;
-  }
-
-  .recent-events__card-date {
-    padding-left: 20px;
-  }
-}
-@media (min-width: 992px) {
-  .recent-events__card {
-    grid: auto-flow dense/8fr 3fr;
+  .fb-page {
+    border: 1px solid #000;
   }
 }
 @keyframes fade-in {

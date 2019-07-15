@@ -4,11 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" href="images/logo-bars.jpg">
   <title>SUBAA</title>
   <link href="css/main.css" rel="stylesheet" href="style.css">
   <script src="javascript/main.js"></script>
 </head>
 <body>
+  <!--Facebook JavaScript SDK-->
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v3.3&appId=2301832069871375&autoLogAppEvents=1"></script> 
+  
   <!--overlay and overlay box for social media button on mobile-->
   <div id="social-overlay-box" class="display-none">
     <button class="social-overlay__close"><span>X</span></button>
@@ -40,7 +45,7 @@
       <nav class="nav-inline">
         <ul class="nav__ul">
           <a href="about.html"><li class="nav__li--inline">About</li></a>
-          <a href="events.html"><li class="nav__li--inline">Events</li></a>
+          <a target="_blank" href="https://www.facebook.com/sydneunibaa/"><li class="nav__li--inline">News</li></a>
           <a href="major.html"><li class="nav__li--inline">Course</li></a>
         </ul>
       </nav>
@@ -49,7 +54,7 @@
   <nav class="nav-dropdown display-none">
     <ul class="nav__ul">
       <a href="about.html"><li class="nav__li--dropdown nav__li--whitebottom">About</li></a>
-      <a href="events.html"><li class="nav__li--dropdown nav__li--whitebottom">Events</li></a>
+      <a target="_blank" href="https://www.facebook.com/sydneunibaa/"><li class="nav__li--dropdown nav__li--whitebottom">News</li></a>
       <a href="major.html"><li class="nav__li--dropdown nav__li--blackbottom">Course</li></a>
     </ul>
   </nav>
@@ -62,60 +67,33 @@
   <section class="join-section">
     <h2 class="join-section__title">Focused on analytics.</h2>
     <div class="join-section__link-container">
-      <a href="https://goo.gl/forms/G9vLI76FvU0O3KjL2" target="_blank"><span class="join-section__link">Join ></span></a>
-      <a href="about.html"><span class="join-section__link">Learn more ></span></a>
+      <a href="https://goo.gl/forms/G9vLI76FvU0O3KjL2" target="_blank"><span class="join-section__link">Join &gt;</span></a>
+      <a href="about.html"><span class="join-section__link">Learn more &gt;</span></a>
     </div>
   </section>
 
-  <!--recent event section-->
-  <section class="recent-events">
-    <h1 class="recent-events__title">Recent Events</h1>
-    <!--first card-->
-    <a href="#"><div class="recent-events__card">
-      <div class="recent-events__card-content">
-        <span class="recent-events__card-title">Feature under development</span> —
-        Coming soon
-      </div>
-      <div class="recent-events__card-date">
-        Sep 30, 2019
-      </div>
-    </div></a>
+  <!--news section-->
+  <div class="div-fb-page-header">
+    <h1 class="div-fb-page-header__title">News from Facebook</h1>
+  </div>
 
-    <!--second card-->
-    <a class="" href="#"><div class="recent-events__card">
-      <div class="recent-events__card-content">
-        <span class="recent-events__card-title">Feature under development</span> —
-        Coming soon
-      </div>
-      <div class="recent-events__card-date">
-        Sep 30, 2019
-      </div>
-    </div></a>
-
-    <!--third card-->
-    <a href="#"><div class="recent-events__card">
-      <div class="recent-events__card-content">
-        <span class="recent-events__card-title">Feature under development</span> —
-        Coming soon
-      </div>
-      <div class="recent-events__card-date">
-        Sep 30, 2019
-      </div>
-    </div></a>
-
-    <!--link to more events-->
-    <div class="recent-events__link-container">
-      <a href="#"><span class="recent-events__link">Read more ></span></a>
+  <div class="div-fb-page">
+    <div class="plugin-container">
+      <div class="fb-page" data-href="https://www.facebook.com/sydneunibaa/" data-tabs="timeline" data-width="500" data-height="400" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="false"><blockquote cite="https://www.facebook.com/sydneunibaa/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/facebook/">SUBAA</a></blockquote></div>
     </div>
-  </section>
+  </div>
+
+  <div class="div-fb-page-links">
+    <a href="https://www.facebook.com/sydneunibaa/" target="_blank"><span class="div-fb-page-links__link">Read more &gt;</span></a>
+  </div>
 
   <!--gallery-->
   <div class="gallery gallery--slide1">
     <button id="gallery__left" class="gallery__button">
-      <
+      &lt;
     </button>
     <button id="gallery__right" class="gallery__button">
-      >
+      &gt;
     </button>
   </div>
 
@@ -135,5 +113,11 @@
       <p>&copy; Copyright 2019 SUBAA</p>
     </div>
   </footer>
+
+  <!--
+  ***
+  site by Sean Gayler
+  ***
+  -->
 </body>
 </html>
